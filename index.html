@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio player</title>
+    <link rel="stylesheet" href="css-index.css">
+</head>
+<body>
+<!-- container -->
+<section id="container">
+    <div class="containerApp">
+        <div class="box">
+            <div class="show">
+                <img src="img/koran.png" alt="" id="logo">
+                <h1 id="musicTitle">Music-Title</h1> 
+            </div>
+            <div class="buttons">
+                <button id="back"><img src="img/prev.png" alt=""></button>
+                <button id="Play_Pause"><img src="img/playStop.png" alt=""></button>
+                <button id="next"><img src="img/next.png" alt=""></button>
+            </div>
+            <div class="seekBar">
+                <h3>Volume</h3>
+                <input type="range" id="volume">
+            </div>
+            <img id="GetInStore" src="img/downloadBox-removebg-preview.png" alt="">
+            <div class="Theme">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+                <div class="fourth"></div>
+            </div>
+            <audio id="player" src=""></audio>
+        </div>
+    </div>
+</section>
+<script src="controls.js"></script>
+<script src="volume.js"></script>
+<script src="colors.js"></script>
+<!-- End of container -->
+</body>
+</html>

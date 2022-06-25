@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300&family=Poppins&family=Roboto+Condensed:ital@1&family=Saira+Stencil+One&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgba(38, 50, 56, 1) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerApp{
+    width: 50%;
+    max-width: 400px;
+    height: 97%;
+    background-color:rgba(229, 229, 229, 1) ;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(229, 229, 229, 1);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box .show{
+    border-radius: 35px 35px 0 0 ;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(38, 50, 56, 1) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.show img{
+    max-width: 150px;
+}
+.show h1{
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.box .buttons{
+    margin: 10px auto;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.box .buttons #back,#next{
+    border-radius: 50%;
+    border:none;
+    width: 40px;
+    height:40px;
+}
+.box .buttons #Play_Pause{
+    border-radius: 50%;
+    border:none;
+    width: 50px;
+    height:50px;
+}
+.box .buttons #Play_Pause img{
+    margin-left: 5%;
+}
+.box .buttons #back img{
+    margin-right: 10%;
+}
+.box .buttons #next img{
+    margin-left: 10%;
+}
+.box .buttons button img{
+    left: 50%;
+    max-width: 25px;
+    transform: translateX(5%);
+    margin: auto 0;
+}
+.box .buttons button{
+    text-align: center;
+    margin: 10px;
+    background-color:  rgba(38, 50, 56, 1);
+    margin-top: 10px;
+    cursor: pointer;
+}
+#back img,#next img{
+    max-width: 20px;
+    margin-top: 8%;
+}
+.seekBar{
+    width: 95%;
+    text-align: center;
+}
+.seekBar h3{
+    margin: 10px 0;
+}
+input[type="range"i]{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background-color:  rgba(38, 50, 56, 1);
+    cursor: pointer;  
+}
+#GetInStore{
+    width: 80%;
+    height: 87px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.Theme{
+    position: absolute;
+    bottom: 0%;
+    width: 50%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Theme div{
+    width: 35px;
+    height:35px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Theme div:hover{
+    transform: scale(1.1);
+}
+.Theme div:nth-child(1){
+    background-color:  rgba(38, 50, 56, 1);
+}
+.Theme div:nth-child(2){
+    background-color: rgb(43 66 64);
+}
+.Theme div:nth-child(3){
+    background-color: rgba(113, 98, 98, 1);
+}
+.Theme div:nth-child(4){
+    background-color: rgba(169, 108, 16, 1);
+}
